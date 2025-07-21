@@ -17,7 +17,7 @@
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
           <li><a href="gallery.html" class="active">Gallery</a></li>
           <li><a href="contact-us.html">Contact</a></li>
         </ul>
@@ -32,16 +32,20 @@
     </div>
   </header>
 
-  <!-- GALLERY CONTENT -->
+  <!-- GALLERY SLIDESHOW -->
   <section class="gallery-full">
     <div class="container">
-      <h1>Our Work Gallery</h1>
-      <div class="gallery-grid">
-        <img src="images/gallery1.jpg" alt="Project 1">
-        <img src="images/gallery2.jpg" alt="Project 2">
-        <img src="images/gallery3.jpg" alt="Project 3">
-        <img src="images/gallery4.jpg" alt="Project 4">
-        <!-- Add more as needed -->
+      <h1>Our Past Work</h1>
+      <div class="slideshow">
+        <div class="slides">
+          <img src="images/gallery1.jpg" alt="Project 1">
+          <img src="images/gallery2.jpg" alt="Project 2">
+          <img src="images/gallery3.jpg" alt="Project 3">
+          <img src="images/gallery4.jpg" alt="Project 4">
+          <!-- add more images as needed -->
+        </div>
+        <button class="prev" aria-label="Previous Slide">&#10094;</button>
+        <button class="next" aria-label="Next Slide">&#10095;</button>
       </div>
     </div>
   </section>
@@ -55,6 +59,26 @@
       <p>© 2025 Clean Master Service • All rights reserved</p>
     </div>
   </footer>
+
+  <script>
+    // Simple JS slideshow
+    (function(){
+      const slides = document.querySelectorAll('.slides img');
+      let idx = 0;
+      function show() {
+        slides.forEach((img,i)=> img.style.display = i===idx ? 'block' : 'none');
+      }
+      document.querySelector('.next').onclick = ()=>{
+        idx = (idx+1) % slides.length; show();
+      };
+      document.querySelector('.prev').onclick = ()=>{
+        idx = (idx-1 + slides.length) % slides.length; show();
+      };
+      // auto-advance every 5s
+      setInterval(()=>{ idx = (idx+1)%slides.length; show(); }, 5000);
+      show();
+    })();
+  </script>
 
 </body>
 </html>
