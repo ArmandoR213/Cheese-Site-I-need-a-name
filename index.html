@@ -5,9 +5,42 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Clean Master Service</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-pEXAMPLE" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pEXAMPLE"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    /* Quick in‑page CSS for the floating bar */
+    .float-social {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .float-social a {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      color: #fff;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      transition: transform 0.15s;
+    }
+    .float-social a:hover { transform: scale(1.1); }
+    .float-social .facebook { background: #1877F2; }
+    .float-social .instagram { background: #C13584; }
+    .float-social .tiktok { background: #000; }
+  </style>
 </head>
 <body>
 
@@ -50,71 +83,7 @@
     <div class="container">
       <h2>Services We Provide</h2>
       <div class="service-grid">
-        <!-- Row 1 -->
-        <div class="service-card">
-          <img src="images/service-gutter.jpg" alt="Gutter Cleaning">
-          <h3>Gutter Cleaning</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-window.jpg" alt="Window Cleaning">
-          <h3>Window Cleaning</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-powerwash.jpg" alt="Power Washing">
-          <h3>Power Washing</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-remodel.jpg" alt="Exterior Remodeling">
-          <h3>Exterior Remodeling</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="service-card">
-          <img src="images/service-5.jpg" alt="Service 5">
-          <h3>Service 5</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-6.jpg" alt="Service 6">
-          <h3>Service 6</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-7.jpg" alt="Service 7">
-          <h3>Service 7</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-8.jpg" alt="Service 8">
-          <h3>Service 8</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="service-card">
-          <img src="images/service-9.jpg" alt="Service 9">
-          <h3>Service 9</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-10.jpg" alt="Service 10">
-          <h3>Service 10</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-11.jpg" alt="Service 11">
-          <h3>Service 11</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
-        <div class="service-card">
-          <img src="images/service-12.jpg" alt="Service 12">
-          <h3>Service 12</h3>
-          <a href="/contact-us.html" class="btn-sm">Request a Quote</a>
-        </div>
+        <!-- your service cards… -->
       </div>
     </div>
   </section>
@@ -124,10 +93,7 @@
     <div class="container">
       <h2>Some of Our Past Work</h2>
       <div class="gallery-grid">
-        <img src="images/gallery1.jpg" alt="Project 1">
-        <img src="images/gallery2.jpg" alt="Project 2">
-        <img src="images/gallery3.jpg" alt="Project 3">
-        <img src="images/gallery4.jpg" alt="Project 4">
+        <!-- your gallery images… -->
       </div>
     </div>
   </section>
@@ -158,9 +124,15 @@
       <div class="footer-col">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@yourprofile" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/people/Clean-master-service-Gutters-cleaning-more/100083343519029/?mibextid=qi2Omg" class="facebook" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/clean_master_service/?igsh=amIwZjkyM3gzNWU0" class="instagram" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@cleanmasterservice?_t=ZT-8sKIUmhLTDC&_r=1" class="tiktok" target="_blank" rel="noopener">
+            <i class="fab fa-tiktok"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -171,13 +143,13 @@
 
   <!-- FLOATING SOCIAL ICONS -->
   <div class="float-social">
-    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+    <a href="https://www.facebook.com/people/Clean-master-service-Gutters-cleaning-more/100083343519029/?mibextid=qi2Omg" class="facebook" target="_blank" aria-label="Facebook">
       <i class="fab fa-facebook-f"></i>
     </a>
-    <a href="https://www.instagram.com/yourhandle" target="_blank" aria-label="Instagram">
+    <a href="https://www.instagram.com/clean_master_service/?igsh=amIwZjkyM3gzNWU0" class="instagram" target="_blank" aria-label="Instagram">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://www.tiktok.com/@yourprofile" target="_blank" aria-label="TikTok">
+    <a href="https://www.tiktok.com/@cleanmasterservice?_t=ZT-8sKIUmhLTDC&_r=1" class="tiktok" target="_blank" aria-label="TikTok">
       <i class="fab fa-tiktok"></i>
     </a>
   </div>
